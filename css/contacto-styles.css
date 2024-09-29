@@ -1,0 +1,132 @@
+/*contacto*/
+
+
+body{
+    margin-top: 100px;/*margen superior*/
+    text-align: center;/*alineacion general*/
+    
+}
+
+.registro{    
+    display: flex;/*display automatica y flexible de los elementos*/
+    justify-content: center;/*contenido del texto justificado y centrado*/
+    align-items: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+    height: 100vh; /*la vh (viewport height) hace que en este caso el area visible del navegador sea del 100%*/
+    margin-top: 106px;/*margen superior*/
+    margin-bottom: 20px;/*margen inferior*/
+    background-color: rgb(44 99 18);/*color fondo*/
+    font-family: 'Monserrat', sans-serif;/*tipo de fuente*/
+    padding-bottom: 140px;/*ubicacion inferior*/
+    color: white;/*color de la fuente*/
+    padding-top: 100px;/*ubicacion superior*/
+}
+
+/*imagen contacto*/
+
+.contacto-img{    
+    max-width: 100%;/*maximo de la imagen*/    
+    cursor: default;/*el cursor se muestra como flecha y no como mano para no confundir y pensar que se puede pulsar*/
+    width: 32vw;/*ancho de la imagen*/
+    object-fit: cover;/* La imagen llenará el contenedor y se recortará si es necesario */
+    object-position: bottom;/* La imagen se alinea con la parte inferior del contenedor */
+    border-radius: 10px;/*redondeo de las esquinas*/
+}
+
+/*formulario contacto*/
+
+.contacto{
+    display: flex;/*display automatica y flexible de los elementos*/
+    align-content: stretch;/* Las líneas se estiran para llenar el espacio disponible en el eje transversal */
+    flex-wrap: wrap;/* Los elementos se envuelven en múltiples líneas si es necesario */
+    flex-direction: column;/* Los elementos se organizan en una columna vertical */
+    padding: 39px 26px 39px 26px;/*ubicacion*/
+    border: solid white 2px;/*borde del recuadro*/
+    border-radius: 30px;/*redondeo de las esquinas*/
+    width: auto;/* el tamaño se ajusta automáticamente para mantener la proporción original */
+    font-size: 16px;/*tamaño de la fuente*/
+}
+
+.registro form{
+    width: 500px;/*ancho del formulario*/
+    margin: 0 10px 40px;/*margenes*/
+}
+
+/*horario*/
+/*entrada de texto*/
+
+.contacto input{
+    width: 100%;/*espacio de la entrada de texto*/
+    text-align: center;/*testo alineado al centro*/
+    border-radius: 10px;/*redondeo de esquinas*/
+    padding: 3px;/*ubicacion*/
+}
+
+/*entrada de texto del "mensaje"*/
+
+.contacto textarea {
+    width: 100%;/*tamaño*/
+    border-radius: 10px;/*redondeo de esquinas*/
+}
+
+/*contenedor horaio*/
+
+.horario_contacto {
+    text-align: center;/*alineaciondel texto*/
+    padding: 11px 39px 19px;/*ubicacion*/
+    border-radius: 17px;/*redondeo de esquinas*/
+    border: solid white 2px;/*borde*/
+    margin-top: 5px;/*margen superior*/
+    margin-bottom: 5px;/*margen inferior*/
+}
+
+/*seleccion de turno*/
+
+.horario{
+    font-weight: bolder;/*negrita*/
+    font-size: 15px;/*tamaño fuente*/
+    padding: 4px 21px;/*tamaño del recuadro*/
+}
+
+/*boton enviar*/
+
+.boton-enviar{
+    width: 100%;/*ubicacion segun el formulario*/
+    display: flex;/*display automatica y flexible de los elementos*/
+    justify-content: center;/*contenido del texto justificado y centrado*/
+    align-items: center;/*alineacion de item, centrados*/
+}
+
+.enviar{    
+    padding: 12px 65px;/*tamaño del boton*/
+    text-align: center;/*alineacion, centrada del texto*/
+    font-size: 16px;/*tamaño fuente*/
+    font-weight: bold;/*negrita*/
+    margin-top: 13px;/*margen superior*/
+    background: rgb(223, 118, 19);/*color fondo*/
+    border-radius: 12px;/*redondeo de esquinas*/
+    cursor: pointer;/*puntero del mouse*/
+    
+}
+
+/*animacion del mouse*/
+
+.enviar:hover{
+    transform: scale(1.2);/*aumento de tamaño*/
+    transition: 1s all;/*tiempo de la transicion*/
+}
+
+
+/*------------- Responsive ------------- */
+
+@media (max-width: 768px){
+    .contenedor-img{
+        display: none;
+    }
+
+    .registro{
+        padding-top: 22%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        height: auto;
+    }
+}

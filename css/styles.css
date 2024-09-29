@@ -1,0 +1,382 @@
+body{
+    font-family: 'Monserrat', sans-serif;/*fuente en todo el body*/
+    margin: 0; /*margen lateral en toda la pagina*/
+    background: rgb(44 99 18); /*color fondo en toda la pagina*/
+}
+
+/*header o cabecera*/
+
+.caja{
+    align-items: center;/*alineacion centrada de los items*/
+    background: #BBBBBB;/*color fondo header*/
+    display: flex; /*display automatica y flexible de los elementos*/
+    justify-content: space-between; /*espacio entre los elementos*/
+    padding-left: 2rem;/*espacio del margen izquierdo*/
+    padding-right: 2rem;/*espacio del margen derecho*/
+    border-bottom: 1px solid white;/*linea inferior de la cabecera*/ 
+    position: fixed;/*posición fija de un elemento aunque la ventana se desplace*/
+    left: 0;/*control izquierdo de la posicion fija*/
+    top: 0;/*control superior de la posicion fija*/
+    width: 100%;/* El ancho del elemento será de 100 píxeles */
+    z-index: 1;/* Este elemento estará "por encima" de los elementos con z-index menor */
+}
+
+
+
+/*logo*/
+
+.logo-img{
+    border-radius: 40px;/*redondea las puntas del logo*/
+    height: 140px;/*tamaño de la imagen*/
+    padding: 7px;/*ubicacion de la imagen*/
+    margin-left: 5px;/*ubicacion con respecto al margen izquierdo*/
+}
+
+/*barra de navegacion*/
+
+nav li{
+    display: inline;/*le quita los puntos de los items*/
+    margin: 0 0 0 30px;/* Solo el margen izquierdo será de 30 píxeles */
+}
+
+/*items de la barra de navegacion*/
+
+nav a{
+    text-decoration: none;/*le quita el subrrayado que viene por defecto*/
+    font-size: 21px;/*tamaño de la fuente*/
+    color: rgb(44 99 18);/*color de la fuente*/
+    font-weight: bold;/*negrita de la fuente*/
+}
+
+.navegador{
+    position: absolute;/*elimina la posicion por defecto*/
+    top: 50px;/* El elemento estará 50px por debajo del borde superior del contenedor */
+    right: 80px;/* El elemento estará 80px a la izquierda del borde derecho del contenedor */
+}
+
+.menu{
+    display: flex;/*display automatica y flexible de los elementos*/
+    justify-content: space-around;/*espacio entre los elementos*/
+
+}
+
+.menu-boton{
+    margin-right: 1.25rem;/* Espacio de 1.25rem (unidad relativa al tamaño de la fuente) a la derecha del ítem */
+    border-color: rgb(44 99 18);/* Color del borde*/
+    border-width: 2px;/* El grosor del borde es de 2 píxeles */
+    border-style: solid;/*estilo sólido del borde*/
+    border-radius: 10px;/* Las esquinas del borde son redondeadas*/
+    padding: 5px;/* Espacio interno (relleno)*/    
+    padding-left: 22px;/* Espacio interno izquierdo del item*/
+    padding-right: 22px;/* Espacio interno derecho del item*/
+}
+
+/*efecto mouse*/
+
+.menu-boton:hover{
+    border-color: white;/*cambio de color a blanco*/
+    transform: scale(1.05);/*aumento de tamaño*/
+    transition: 0.2s;/*tiempo de la transicion*/
+}
+
+
+
+/*banner "Turismo"*/
+
+.banner{
+    position: relative;/*posicion del texto*/
+    text-align: center;/*alineacion del texto*/
+}
+
+.img-banner{
+    border-radius: 60px;/*redondeo de esquinas de la imagen*/
+}
+
+.banner img{
+    margin-top: 137px;/*posicion desde el margen superior*/
+    padding: 35px;/*ubicacion de la imagen*/
+    width: 95%;/*ancho*/
+    height: 400px;/*altura*/
+    display: block;/* Hace que el elemento se comporte como un bloque, ocupando todo el ancho disponible */
+}
+
+/*texto imagen "Turismo"*/
+
+.texto-banner{
+    font-family: "Lobster", sans-serif;/*fuente*/
+    position: absolute;/*posicion en el centro de la imagen*/
+    top: 25%;/*ubicacion margen superior de la imagen*/
+    left: 50%;/*ubicacion margen izquierdo de la imagen*/
+    transform: translate(-50%, -50%);/* Ajusta el texto para que esté centrado. centro absoluto de la imagen */
+    color: white;
+    font-size: 8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/*sombreado: 2px (eje x), 2px (eje y), 4px desenfoque de la sombra y rgba aplica el color*/
+}
+
+/*texto sobre nosotros*/
+
+.nosotros1{
+    font-size: 30px;/*tamaño de la fuente*/
+    color: white;/*color*/
+    font-weight: bold;/*negrita*/
+}
+
+.nosotros2{
+    font-size: 18px;/*tamaño de la fuente*/
+    color: white;/*color*/
+    font-weight: bold;/*negrita*/
+    
+}
+
+.nosotros3{
+    color: white;/*color*/
+    margin: 10px 75px 0 86px;/*ubicacion segun los margenes.10px (superior), 75px (derecho), 0px (inferior), 86px (izquierdo)*/    
+    text-align: justify; /*alineacion justificada*/
+    font-size: 18px;/*tamaño fuente*/
+}
+
+.nosotros4{
+    color: white;/*color*/
+    font-size: 20px;/*tamaño fuente*/
+    font-weight: bold;/*negrita*/
+    padding: 30px;/*ubicacion*/
+}
+
+/*servicios*/
+
+#servicios {/*toda la seccion*/
+    border-top: 7px solid #BBBBBB;/*separacion superior de la seccion anterior. linea solida de 7px color gris*/
+    text-align: center;/*texto centrado*/
+    padding: 20px;/*ubicacion del texto*/
+}
+
+/*titulo servcios*/
+
+#servicios h2 {
+    font-family: "Lobster", sans-serif;/*tipo de fuente*/
+    color: white;/*color*/
+    text-align: center;/*alineacion*/
+    font-size: 50px;/*tamaño de la fuente*/
+    margin-bottom: 10px;/*margen inferior*/
+}
+
+/*texto servicios*/
+
+#servicios p {
+    font-size: 18px; /*tamaño de la fuente*/
+    color: white;/*color*/
+    margin: 10px 75px 0 86px;/*ubicaion segun los margenes*/
+    margin-bottom: 20px;/*ubicacion margen inferior*/
+}
+
+.servicio {
+    display: inline-block;/* El elemento se comporta como un bloque en línea, permitiendo definir el ancho, alto, margen y relleno, pero aún se alinea junto a otros elementos en línea */    
+    margin: 1%;/*margen alrededor del elemento de un 1% del ancho del contenedor*/
+    vertical-align: top;/* Alinea el elemento en la parte superior respecto a otros elementos en línea*/
+}
+
+/*titulos servicios*/
+
+.servicio h3 {
+    color: white;/*color*/
+    font-size: 1.5em;/*tamaño fuente*/
+    margin-bottom: 10px;/*margen inferior*/
+}
+
+.servicio p {
+    color: white;/*color*/
+    font-size: 1em;/*tamaño fuente*/
+    margin-bottom: 10px;/*margen inferior*/
+}
+
+/*imagenes servicios*/
+
+.img-rafting {
+    width: 40%;/* La imagen se ajusta al 40% del ancho de su contenedor */
+    height: auto;/* La altura se ajusta automáticamente para mantener la proporción original */
+    border-radius: 5px;/*redondeo de esquinas*/
+}
+
+.img-ciclismo{
+    width: 40%;/* La imagen se ajusta al 40% del ancho de su contenedor */
+    height: auto;/* La altura se ajusta automáticamente para mantener la proporción original */
+    border-radius: 5px;/*redondeo de esquinas*/
+}
+
+.img-kayack{
+    width: 40%;/* La imagen se ajusta al 40% del ancho de su contenedor */
+    height: auto;/* La altura se ajusta automáticamente para mantener la proporción original */
+    border-radius: 5px;/*redondeo de esquinas*/
+}
+
+/*mapa*/
+
+.mapa-contenido{
+    border-top: 7px solid #BBBBBB;/*separacion superior*/
+    margin-top: 3rem;/*margen superior*/
+    margin-bottom: 3rem;/*margen inferior*/
+    
+}
+
+/*titulo mapa*/
+
+.mapa-titulo{
+    font-family: "Lobster", sans-serif; /*fuente*/
+    color: white;/*color*/
+    text-align: center;/*alineacion del texto*/
+    font-size: 50px;/*tamaño de la letra*/
+    margin-bottom: 10px;/*margen inferior*/
+}
+
+.mapa{
+    margin: 8px;/*margen*/
+}
+
+/*si quiero cambiarle el tamaño al mapa que se inserta por defecto, en la direccion que se pega en el html te especifica width="100%" height="350" style="border:0;*/
+
+/*footer*/
+
+footer {
+    background-color: #BBBBBB;/*color fondo del footer*/    
+    padding: 7px;/*ubicacion*/
+    display: flex;/*display automatica y flexible de los elementos*/
+    justify-content: space-between; /*espacio entre los elementos*/
+    align-items: center; /* Alinea los items en el centro */
+    border-top: 1px solid white;/*separacion superior de la seccion*/
+}
+
+.footer-logo{
+    display: flex;/*display automatica y flexible de los elementos*/
+}
+
+/*imagen footer*/
+
+footer img {
+    border-radius: 20px;/*redondeo de las esquinas de la imagen*/
+    height: 100px;/*tamaño*/
+}
+
+/*texto copyright*/
+
+.copyright {
+    color: rgb(44, 99, 18);/*color*/
+    font-size: 13px;/*tamaño fuente*/
+    margin: 40px 20px;/*margenes*/
+    font-weight: bold;/*negrita*/
+}
+
+/*iconos redes*/
+
+.social-icons {
+    display: flex;/*display automatica y flexible de los elementos*/
+    gap: 10px; /* Espacio de 10 píxeles entre las columnas y las filas */
+}
+
+.social-icons img {
+    width: 30px; /* Tamaño de los íconos */
+    height: auto;/* La altura se ajusta automáticamente para mantener la proporción original */
+    transition: transform 0.3s ease;/* Configura la transición para la propiedad transform */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Efecto de agrandamiento al pasar el ratón sobre la imagen */
+}
+
+.footer-content {
+    text-align: center;/*alineacion del texto*/
+}
+
+
+/*------------- Responsive ------------- */
+
+
+@media (max-width: 768px) {
+    
+    .logo-img{
+        margin: 0 47%;
+        padding: 7px;
+    }
+    
+    .navegador{
+        position: static;
+    }
+
+    .banner{
+        padding-right: 20px;
+        padding-top: 90px;
+    }
+
+    .texto-banner{
+        padding-top: 220px;
+    }
+
+    .nosotros1{
+        font-size: 35px;
+    }
+
+    .nosotros2{
+        font-size: 22px;
+    }
+
+    .nosotros3{
+        font-size: 22px;
+    }
+
+    .nosotros4{
+        font-size: 22px;
+    }
+
+    #servicios{
+        padding: 0;
+    }
+
+    #servicios h2{
+        font-size: 55px;
+    }
+
+    #servicios p{
+        font-size: 22px;
+    }  
+    
+    .servicio h3{
+        font-size: 2em;
+    }
+
+    
+}
+
+@media (max-width: 500px) {
+
+    .caja div{
+        display: flex;
+    }
+
+    .logo-img{
+        display: flex;
+        margin: 0;
+        padding: 7px;
+    }
+    
+    .navegador{
+        display: flex;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner img{
+        width: 93%;
+    }
+
+    .banner{
+        padding-top: 10px;
+    }
+
+    .texto-banner{
+        margin-top: -180px;
+        font-size: 100px;
+    }
+}

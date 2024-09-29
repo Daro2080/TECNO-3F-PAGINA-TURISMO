@@ -1,0 +1,101 @@
+/*servicios*/
+
+#servicios {
+    margin-top: 100px;/*margen superior*/
+    text-align: center;/*alineacion del texto*/
+    padding: 20px;/*ubicacion*/
+}
+
+/*titulo servicios*/
+
+#servicios h2 {
+    font-family: "Lobster", sans-serif;/*fuente del titulo*/
+    color: white;/*color*/
+    text-align: center;/*alineacion*/
+    font-size: 50px;/*tamaño fuente*/
+    margin-bottom: 10px;/*margen inferior*/
+}
+
+/*texto servicios en general*/
+
+#servicios p {
+    font-size: 18px;/*tamaño fuente*/
+    color: white;/*color*/
+    margin: 10px 75px 0 86px;/*ubucacion segun margenes*/
+    margin-bottom: 20px;/*margen inferior*/
+}
+
+.servicio {
+    display: inline-block;/*definir el ancho, alto, margen y relleno, tipo bloque*/        
+    margin: 1%;/*margen*/
+    vertical-align: top;/*alineacion vertical superior*/    
+}
+
+/* Títulos servicios */
+
+.servicio h3 {
+    color: white;/*color*/
+    font-size: 1.5em;/*tamaño fuente*/
+    margin-bottom: 10px;/*margen inferior*/
+}
+
+/*texto servicios especifico*/
+
+.servicio p {
+    color: white;/*color*/
+    font-size: 1em;/*tamaño fuente*/
+    margin-bottom: 10px;/*margen inferior*/
+}
+
+/*seccion imagenes servicios*/
+
+.imagenes-servicio {
+    display: flex;/*display automatica y flexible de los elementos*/
+    justify-content: center;/*contenido del texto justificado y centrado*/
+    gap: 15px; /* Espacio entre las imágenes */
+    margin-top: 20px;/*margen superior*/
+}
+
+/*imagenes*/
+
+.aventura {
+    width: 280px; /* Tamaño fijo para todas las imágenes */
+    height: 190px; /* Ajuste de altura */
+    object-fit: cover; /* Asegura que la imagen mantenga su relación de aspecto y llene el contenedor */
+    border-radius: 10px; /* Bordes redondeados para un efecto más suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+/* Efecto hover: agrandamiento y sombra */
+.aventura:hover {
+    transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Agrega sombra para destacar la imagen */
+}
+
+
+
+/*------------- Responsive ------------- */
+
+@media (max-width: 768px) {
+    #servicios {
+        padding-top: 110px;
+    }
+
+    #servicios h2{
+        font-size: 55px;
+    }
+
+    #servicios p{
+        font-size: 22px;
+    }  
+    
+    .servicio h3{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 500px){
+    #servicios {
+        padding-top: 35px;
+    }
+}
