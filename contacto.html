@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contacto-styles.css">    
+    <title>Yo ♥ San Rafael - Contacto</title>
+</head>
+<body>
+    <header class="caja"><!--menu y logo-->
+        <div>
+            <img src="imges/logo-san-rafael-turismo-2.jpg" alt="logo" class="logo-img">
+        <nav class="navegador">
+            <ul class="menu">
+                <li class="menu-boton"><a href="./index.html">Sobre Nosotros</a></li>
+                <li class="menu-boton"><a href="./servicios.html">Servicios</a></li>
+                <li class="menu-boton"><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <!--registro-->
+    <main class="registro">
+        <div class="contenedor-img"> <!--contenedor imagen-->
+            <img src="imges/Paisaje-en-San-Rafael.jpg" alt="imagen-contacto" class="contacto-img">
+        </div>
+
+        <!--contenedor formulario-->
+        <form>            
+            <div class="contacto">          
+                <label for="Nombre" class="contacto-item">Nombre</label>
+                <input type="text" id="Nombre" name="Nombre" class="input" required>
+                <br><br>
+                <label for="Apellido" class="contacto-item">Apellido</label>
+                <input type="text" id="Apellido" name="Apellido" class="input" required>
+                <br><br>
+                <label for="Correo" class="contacto-item">Correo Electrónico</label>
+                <input type="text" id="Email" name="Email" class="input" required placeholder="email@ejemplo.com">
+                <br><br>
+                <label for="Telefono" class="contacto-item">Teléfono</label>
+                <input type="text" id="Telefono" name="Telefono" class="input" required placeholder="(xx) xxxx-xxxx">
+                <br><br>
+                <label for="Mensaje" class="contacto-item">Mensaje</label>
+                <textarea cols="70" rows="10" class="input"></textarea>
+            </div>  
+
+            <!--contenedor horario-->
+            <fieldset class="horario_contacto">
+                <legend>¿En que horario prefiere ser contactado?</legend>
+                <select class="horario">
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select>
+            </fieldset>
+
+            <!--boton envio-->
+            <div class="boton-enviar"> 
+                <input type="submit" class="enviar" value="Enviar Formulario">
+            </div>
+        </form>        
+    </main>
+
+    <footer> <!--footer y redes sociales-->
+        <div class="footer-logo">
+            <img src="imges/logo-san-rafael-turismo-2.jpg" alt="logo">
+            <p class="copyright">© Copyright Yo ♥ San Rafael - Corazon de Mendoza - 2024</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/twitterx--v1.png" alt="twitterx--v1"/>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/>
+            </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
