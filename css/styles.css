@@ -294,8 +294,9 @@ footer img {
 @media (max-width: 768px) {
     
     .logo-img{
-        margin: 0 47%;
-        padding: 7px;
+        height: 165px;
+        margin: 0 45%;
+        padding: 4px;
     }
     
     .navegador{
@@ -312,11 +313,13 @@ footer img {
     }
 
     .nosotros1{
+        margin: 8px;
         font-size: 35px;
     }
 
     .nosotros2{
         font-size: 22px;
+        margin: 20px;
     }
 
     .nosotros3{
@@ -328,7 +331,7 @@ footer img {
     }
 
     #servicios{
-        padding: 0;
+        padding-top: 55px;
     }
 
     #servicios h2{
@@ -346,7 +349,7 @@ footer img {
     
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     .caja div{
         display: flex;
@@ -360,6 +363,7 @@ footer img {
     
     .navegador{
         display: flex;
+        margin-left: 100px;
     }
 
     .menu{
