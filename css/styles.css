@@ -290,97 +290,117 @@ footer img {
 
 /*------------- Responsive ------------- */
 
-
+/* Estilos para pantallas con un ancho máximo de 768px */
 @media (max-width: 768px) {
-    
+
+    /* Ajusta la altura de la imagen del logo, y la centra horizontalmente con márgenes */
     .logo-img{
-        height: 165px;
-        margin: 0 45%;
-        padding: 4px;
+        height: 165px;/* Tamaño del logo */
+        margin: 0 45%;/* Centrado horizontalmente */
+        padding: 4px;/* Espaciado interno del logo */
     }
     
+    /* Posiciona el navegador de manera estática en lugar de absoluta o fija */
     .navegador{
         position: static;
     }
 
+    /* Ajusta el banner, dando espacio a la derecha y ajustando el padding superior */
     .banner{
         padding-right: 20px;
         padding-top: 90px;
     }
 
+    /* Ajusta el espacio superior del texto dentro del banner */
     .texto-banner{
         padding-top: 220px;
     }
 
+    /* Ajusta el margen y tamaño de fuente del texto 'Nosotros 1' */
     .nosotros1{
         margin: 8px;
-        font-size: 35px;
+        font-size: 35px;/* Tamaño de fuente más grande para pantallas medianas */
     }
 
+    /* Ajusta el tamaño de fuente y margen del texto 'Nosotros 2' */
     .nosotros2{
         font-size: 22px;
         margin: 20px;
     }
 
+    /* Ajusta el tamaño de fuente del texto 'Nosotros 3' */
     .nosotros3{
         font-size: 22px;
     }
 
+    /* Ajusta el tamaño de fuente del texto 'Nosotros 4' */
     .nosotros4{
         font-size: 22px;
     }
 
+    /* Ajusta el padding superior para la sección 'Servicios' */
     #servicios{
         padding-top: 55px;
     }
 
+    /* Cambia el tamaño del encabezado (h2) en la sección 'Servicios' */
     #servicios h2{
-        font-size: 55px;
+        font-size: 55px;/* Hace el texto más grande */
     }
 
+    /* Ajusta el tamaño del texto del párrafo en la sección 'Servicios' */
     #servicios p{
         font-size: 22px;
     }  
     
+    /* Ajusta el tamaño del encabezado (h3) dentro de la clase 'servicio' */
     .servicio h3{
-        font-size: 2em;
+        font-size: 2em;/* Aumenta el tamaño relativo del h3 */
     }
 
     
 }
 
+/* Estilos para pantallas con un ancho máximo de 600px */
 @media (max-width: 600px) {
 
+    /* Aplica flexbox para organizar los elementos div dentro de la clase 'caja' */
     .caja div{
         display: flex;
     }
 
+    /* Ajusta el logo para pantallas pequeñas, eliminando el margen y aumentando el padding */
     .logo-img{
         display: flex;
         margin: 0;
         padding: 7px;
     }
     
+    /* Aplica flexbox al navegador y ajusta su margen izquierdo */
     .navegador{
         display: flex;
         margin-left: 100px;
     }
 
+    /* Cambia el menú a una dirección en columna para que los elementos se alineen verticalmente */
     .menu{
         display: flex;
         flex-direction: column;
     }
 
+    /* Ajusta el ancho de la imagen del banner para que ocupe el 93% del contenedor */
     .banner img{
         width: 93%;
     }
 
+    /* Ajusta el padding superior del banner para reducir el espacio */
     .banner{
         padding-top: 10px;
     }
 
+    /* Cambia el margen superior y tamaño de fuente del texto dentro del banner */
     .texto-banner{
         margin-top: -180px;
-        font-size: 100px;
+        font-size: 100px;/* Reduce el tamaño del texto para pantallas pequeñas */
     }
 }
