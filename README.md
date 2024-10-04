@@ -2,4 +2,4 @@
 
 Diseño de pagina web
 
-https://daro2080.github.io/TECNO-3F-PAGINA-TURISMO/contacto.html
+https://daro2080.github.io/TECNO-3F-PAGINA-TURISMO/
