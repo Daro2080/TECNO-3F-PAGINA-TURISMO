@@ -124,9 +124,22 @@ body{
     }
 
     .registro{
-        padding-top: 22%;
+        padding-top: 10%;
         padding-bottom: 0;
         margin-bottom: 0;
         height: auto;
     }
+}
+
+@media (max-width: 600px){
+
+    .registro{
+        padding-top: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .registro {
+        margin-top: 40px;
+        }
 }

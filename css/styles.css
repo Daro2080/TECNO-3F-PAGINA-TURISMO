@@ -2,6 +2,8 @@ body{
     font-family: 'Monserrat', sans-serif;/*fuente en todo el body*/
     margin: 0; /*margen lateral en toda la pagina*/
     background: rgb(44 99 18); /*color fondo en toda la pagina*/
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /*header o cabecera*/
@@ -292,6 +294,10 @@ footer img {
 
 /* Estilos para pantallas con un ancho máximo de 768px */
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
 
     /* Ajusta la altura de la imagen del logo, y la centra horizontalmente con márgenes */
     .logo-img{
@@ -307,8 +313,13 @@ footer img {
 
     /* Ajusta el banner, dando espacio a la derecha y ajustando el padding superior */
     .banner{
+        margin: 12px 10px 0 0;
         padding-right: 20px;
         padding-top: 90px;
+    }
+
+    .banner img{
+        width: 93%;
     }
 
     /* Ajusta el espacio superior del texto dentro del banner */
@@ -340,7 +351,7 @@ footer img {
 
     /* Ajusta el padding superior para la sección 'Servicios' */
     #servicios{
-        padding-top: 55px;
+        padding-top: 20px;
     }
 
     /* Cambia el tamaño del encabezado (h2) en la sección 'Servicios' */
@@ -358,11 +369,30 @@ footer img {
         font-size: 2em;/* Aumenta el tamaño relativo del h3 */
     }
 
+    .img-rafting{
+        width: 50%;
+    }   
+
+    .img-ciclismo{
+        width: 53%;
+    }
+
+    .img-kayack{
+        width: 55%;
+    }
     
+    footer{
+        padding: 8px 25px;
+    }
 }
 
 /* Estilos para pantallas con un ancho máximo de 600px */
 @media (max-width: 600px) {
+
+    body{
+        width: auto;
+        height: auto;
+    }
 
     /* Aplica flexbox para organizar los elementos div dentro de la clase 'caja' */
     .caja div{
@@ -391,6 +421,7 @@ footer img {
     /* Ajusta el ancho de la imagen del banner para que ocupe el 93% del contenedor */
     .banner img{
         width: 93%;
+        padding-top: 50px;
     }
 
     /* Ajusta el padding superior del banner para reducir el espacio */
@@ -400,7 +431,57 @@ footer img {
 
     /* Cambia el margen superior y tamaño de fuente del texto dentro del banner */
     .texto-banner{
-        margin-top: -180px;
+        margin-top: -100px;
         font-size: 100px;/* Reduce el tamaño del texto para pantallas pequeñas */
+    }
+
+    #servicios{
+        padding-top: 20px;
+    }
+}
+
+/* Estilos para pantallas con un ancho máximo de 480px */
+
+@media (max-width: 480px){
+
+    body{
+        width: auto;
+    }
+
+    .logo-img{
+        height: 120px;/* Redimensiona la altura del logo para pantallas pequeñas */
+        
+    }
+
+    .menu{
+        margin: 0 -85px 0px;
+    }
+
+    .banner img{
+        padding-top: 10px;
+    }
+
+    .texto-banner{
+        padding-top: 20px;
+    }
+
+    .img-rafting{
+        width: 60%;
+        height: auto;
+    }
+
+    .img-trekking{
+        width: 65%;
+        height: auto;
+    }
+
+    .img-ciclismo{
+        width: 60%;
+        height: auto;
+    }
+
+    .img-kayack{
+        width: 65%;
+        height: auto;
     }
 }

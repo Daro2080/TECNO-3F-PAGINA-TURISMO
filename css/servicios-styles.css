@@ -78,7 +78,7 @@
 
 @media (max-width: 768px) {
     #servicios {
-        padding-top: 110px;
+        padding-top: 120px;
     }
 
     #servicios h2{
@@ -94,8 +94,15 @@
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     #servicios {
-        padding-top: 35px;
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 480px){
+
+    #servicios{
+        padding-top: 18px;
     }
 }
